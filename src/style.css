@@ -12,6 +12,34 @@ body {
   text-align: center;
 }
 
+nav {
+  padding: 20px 0;
+  margin-right: 15px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  font-family: var(--heading-font-family);
+  line-height: 42px;
+  list-style: none;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #272142;
+}
+
+.navbar-nav a:hover {
+  color: var(--primary-color);
+  transition: all 150ms ease-in-out;
+}
+
 h1 {
   font-family: var(--heading-font-family);
   font-size: 90px;
@@ -101,6 +129,7 @@ p {
 .img-fluid {
   border-radius: 10px;
   max-width: 80%;
+  margin-top: 20px;
   height: auto;
 }
 
@@ -131,5 +160,9 @@ p {
 
   .content {
     text-align: center;
+  }
+
+  nav a {
+    font-size: 15px;
   }
 }
